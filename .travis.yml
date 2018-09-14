@@ -1,11 +1,10 @@
 language: "node_js"
 node_js:
-  - "node"
   - '8'
 branches:
   only:
   - master
-install:
+before_script:
   - npm install
 script:
   - npm test
